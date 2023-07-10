@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head' );%>
+
+</head>
+
+<body>
+    <header>
+        <%- include ( '../partials/header' );%>
+    </header>
+    <main class="main">
+
+        <section class="seccion-uno-cuenta-marcas">
+
+            <article class="on-page-cuenta-marcas-cuadro">
+
+                <div class="opcu-cuadro-marcas-uno">
+
+                    <div class="opcu-marca-nombre">
+                    </div>
+
+                    <div class="opcu-marca-imagen">
+                    </div>
+                    <div class="opcu-marca-comentario">
+                        <textarea></textarea>
+                    </div>
+                </div>
+
+                <div class="opcu-cuadro-marcas-dos">
+                </div>
+
+                <div class="opcu-cuadro-marcas-tres">
+                    <a href="/crearmercaderiamarcas">Crear una nueva mercaderia</a>
+                </div>
+
+            </article>
+
+        </section>
+        <section class="seccion-dos-cuenta-marcas">
+
+            <article class="opcum-almacen">
+
+                <div class="opcum-almacen-titular">
+                    <p class="opcum-almacen-titulo">Almacen : nombre del almacen </p>
+                    <p class="opcum-almacen-control">Control</p>
+                </div>
+
+                <div class="opcum-almacen-lista">
+                    <div>
+                        <p class="opcum-almacen-lista-text">Lista, nombre. con caracteristicas. segun
+                            configuracion, mercaderias ,canastas</p>
+                    </div>
+                    <div class="opcum-almacen-lista-mercaderia">
+                        <div class="opcum-almacen-lista-mercaderia-item">
+                            Foto
+                        </div>
+                        <div class="opcum-almacen-lista-info">
+                            <button class="opcum-lista-info" onclick="location.href='';">Ver detalles</button>
+                        </div>
+                        <div class="opcum-almacen-lista-opciones">
+                            <button class="opcum-lista-button-single" onclick="location.href='';">Enviar al
+                                mercado</button>
+                            <button class="opcum-lista-button-single" onclick="location.href='';">Modificar
+                                mercaderia</button>
+                            <button class="opcum-lista-button-single" onclick="location.href='';">Eliminar esta
+                                mercaderia</button>
+                        </div>
+                    </div>
+                    <div class="on-page-almacen-marcas-lista-scroll">
+                        <div class="on-page-almacen-marcas-lista-inerscroll"></div>
+                    </div>
+
+                </div>
+
+                <div class="opcum-almacen-desplegar-seccion">
+                    <p>Desplegar almacen</p>
+                </div>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <%-include ('../partials/footer'); %>
+    </footer>
+</body>
+
+</html>

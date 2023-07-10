@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('../partials/head' , {title}) %>
+ 
+</head>
+<body>
+    <header>
+        <%- include('../partials/header') %>
+    </header>
+    <main>
+        <section class="seccion-uno-crear-mercaderia-marcas">
+
+            <article class="opcmm-article">
+
+                <h2>Creacion de mercaderia marcas</h2>
+                <ul>
+                    <% errors.forEach(elemento=>{ %>
+    
+                       <li class="op-crear-mercaderia-marca"> <%= elemento.msg%></li>
+    
+                        <%});%>
+    
+                </ul>
+    
+                <form action="/mercadocomercialmercaderias" method="post" enctype="multipart/form-data" class="on-page-crear-mercaderia-marca-formulario">
+                    <div class="opcmm-info-single">
+                        <label for="">Nombre</label>
+                        <input type="text" name="title">
+                    </div>
+                    <div class="opcmm-info-single">
+                        <label for="">Precio</label>
+                        <input type="number" name="price">
+                    </div>
+                    <div class="opcmm-info-single">
+                        <label for="">Descripcion</label>
+                        <input type="text" name="description">
+                    </div>
+                    <div class="opcmm-info-single">
+                        <label for="">Año aproximado</label>
+                        <input type="number" name="year" id="" min="1900" max="2099" placeholder="2023">
+                    </div>
+                    <div class="opcmm-info-single">
+                        <label for="img">Subir Foto</label>
+                        <input type="file" name="img" id="img" accept=".jpeg, .jpg , .png">
+                    </div>
+                    <div class="opcmm-info-single">
+                        <p>Escribe un comentario:</p>
+                        <textarea name="" id="" cols="20" rows="4" class="opcmm-info-textarea"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
+            </article>
+
+        </section>
+    
+    </main>
+        <footer>
+            <%- include('../partials/footer')  %>
+        </footer>
+</body>
+
+</html>
