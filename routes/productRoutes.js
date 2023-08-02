@@ -13,7 +13,6 @@ const validationsMarcaMiddlewares = require ('../middlewares/validationsMarca.js
 const validationsMiddlewares= require('../middlewares/validations.js')
 
 
-
 const upload = multer({ storage: storage });
 const uploadMarca = multer({ storage : storageMarca});
 

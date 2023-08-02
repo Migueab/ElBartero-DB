@@ -7,10 +7,9 @@ const methodOverride = require ('method-override');
 const morgan = require('morgan');
 const fs = require('fs');
 const session = require('express-session');
-const userLoggedNavBarMiddleware = require('./middlewares/userLoggedNavBarMiddleware.js');
 const cookieParser = require('cookie-parser');
 
-
+const userLoggedNavBarMiddleware = require('./middlewares/userLoggedNavBarMiddleware.js');
 
 const publicPath = path.join (__dirname, './public');
 
@@ -42,8 +41,8 @@ app.use (session({
     resave:false,
     saveUninitialized:false
 }));
-app.use(userLoggedNavBarMiddleware);
 app.use(cookieParser());
+app.use(userLoggedNavBarMiddleware);
 
 
 

@@ -58,9 +58,10 @@ router.put ( '/editarperfil/:user/update' ,authMiddleware , userController.upDat
 
 router.delete ( '/editarperfil/:user/delete' ,authMiddleware , userController.deleteUserProfile );
 
+
+
 //@get /useracountmarcas
 router.get ( '/useracountmarca' , authMarcaMiddleware , userController.getUserAcountMarcas );
-
 
 
 
